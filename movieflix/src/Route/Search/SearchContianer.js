@@ -12,6 +12,13 @@ export default class extends React.Component{
 
     };
 
+    handleSubmit=()=>{
+        const{searchTerm}=this.state;
+        if(searchTerm !== ""){
+            
+        }
+    }
+    searchByTerm=
    
     render(){
         const{movieResults,tvResults,searchTerm,loading,error}=this.state;
