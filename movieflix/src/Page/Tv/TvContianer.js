@@ -8,7 +8,12 @@ export default class extends React.Component{
         airingToay:null,
         error:null,
         loading:true
+    };
+
+    componentDidMount(){
+        
     }
+
 
     render(){
         const {topRated,   popular, airingToay, error, loading}=this.state;
