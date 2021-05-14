@@ -12,12 +12,11 @@
 
 ## API Verbs
 
-- [x] Now playing(movie)
-- [x] Upcoming(movie)
-- [x] Top Rared (tv ,)
-- [x] popular(tv,movie)
-- [x] AIRTING Today(tv)
-- [x] Tv Shouw Datil
-- [x] movie Shouw Datil
-- [] Search Movies
-- [] Search Tv
+[x] Now playing(movie)
+[x] upcoming(movie)
+[x] Popular (tv,movie)
+[x] Top Rated(tv)
+[x] Airing today(tv)
+[x] Tv Show Detail
+[x] Movie Detail
+[x]Search (movie,tv)

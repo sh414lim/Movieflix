@@ -20,6 +20,7 @@ const globalstyled =createGlobalStyle`
     }
 
     h1{
+        display:flex;
         color:white;
         margin-top:10px;
     }
