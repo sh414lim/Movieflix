@@ -11,7 +11,8 @@ const Head=styled.header`
 
 const List=styled.ul`
     display:flex;
- 
+
+  
     `;
 
 const Item=styled.li`
@@ -26,12 +27,14 @@ const Item=styled.li`
     &:hover{
         color:red;
     }
+   
 `;
 
 const Page=styled(Link)`
 `;
 
 export default withRouter(({location:{pathname}})=>(
+    <>
     <Head>
         <List>
             <Item current={pathname === "/"}>
@@ -50,6 +53,8 @@ export default withRouter(({location:{pathname}})=>(
                 <Page to="/search">Search</Page>
             </Item>
         </List>
+        <h1 className="mark">N</h1>
     </Head>
+    </>
 
 ))

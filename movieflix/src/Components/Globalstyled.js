@@ -21,7 +21,21 @@ const globalstyled =createGlobalStyle`
 
     h1{
         color:white;
-        margin-top:30px;
+        margin-top:10px;
+    }
+
+    .mark{
+        color:white;
+        font-size:30px;
+        margin-left:700px;
+        font-weight:800;
+        &:hover{
+            color:red;
+            font-size:60px;
+            transition:color  0.6s  ease-in-out;
+            transition: font-size  0.6s  ease-in-out;
+        }
+
     }
 
 
