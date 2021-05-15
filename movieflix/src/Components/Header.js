@@ -11,8 +11,6 @@ const Head=styled.header`
 
 const List=styled.ul`
     display:flex;
-
-  
     `;
 
 const Item=styled.li`
