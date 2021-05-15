@@ -5,12 +5,13 @@ const globalstyled =createGlobalStyle`
     ${reset}
 
     *{
-        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        box-sizing:border-box;
     }
 
     body{
     background-color:black;
-    box-sizing:border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:white;
 
     }
     
@@ -19,11 +20,6 @@ const globalstyled =createGlobalStyle`
         color:inherit;
     }
 
-    h1{
-        display:flex;
-        color:white;
-        margin-top:10px;
-    }
 
     .mark{
         color:white;

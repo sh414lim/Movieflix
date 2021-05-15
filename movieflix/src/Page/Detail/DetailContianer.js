@@ -12,9 +12,27 @@ export default class extends React.Component{
 
         error:null,
         loading:true
-    }
+    };
+
+    async componentDidMount(){
+        const {
+            match:{
+                params:{id}
+            },
+            history:{push},
+            location:{pathname}
+            }=this.props;
+
+            this.ismovie=pathname.includes("/movie/");
+            const parsedId = parseInt(id);
+            if(isNaN(parsedId)){
+             return    push("/");
+            }
+            console.log(this.ismovie);
+        }
 
     render(){
+        console.log(this.props)
         const {result,error,loading} = this.state
         return(
             <DetailPresenter
