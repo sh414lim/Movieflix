@@ -35,7 +35,9 @@ export default class extends React.Component{
          return  push("/");
             //return 할 때 함수는 종료한다.
         }
-        let result=null
+        let result=null;
+    //request.data는 result 와 같다
+
         try{
             if(isMovie){
            ({data:result}= await Moviesapi.movieDetail(parseId));
