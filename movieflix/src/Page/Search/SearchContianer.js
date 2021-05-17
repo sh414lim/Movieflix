@@ -7,7 +7,7 @@ export default class extends React.Component{
         movieResults:null,
         tvResults:null,
         //누군가 검색을 시도 했을때 양쪽 영화 티비 결과를 둘다 보여주기위해 
-        searchTerm:"", //string
+        searchTerm:"sdasdas", //string
         error:null,
 
         //default로 아무것도 로딩하지 않으므로 loading 은 false 이다.

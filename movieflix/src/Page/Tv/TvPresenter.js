@@ -6,6 +6,7 @@ import Loder from "../../Components/Loder";
 
 const Container = styled.div`
   padding: 0px 10px;
+
 `;
 
 const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
