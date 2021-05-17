@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Section from "../../Components/Section";
 import Loder from "../../Components/Loder";
+import Poster from "../../Components/Poster";
 
   const Container=styled.div`
   padding:10px 10px;
@@ -15,17 +16,46 @@ loading ? (
     <Container>
         {upcoming && upcoming.length > 0 && (
     <Section title= "Upcoming Movie">
-     {upcoming.map(movie => <span key={movie.id}> {movie.title}</span>)}
+     {upcoming.map(movie => (
+         <Poster
+          key={movie.id} 
+          id={movie.id} 
+          title={movie.original_title} 
+          imageUrl={movie.poster_path} 
+          isMovie={true} 
+          rating={movie.vote_average} 
+          year={movie.release_date && movie.release_date.substring(0,4)}/>
+))}
      </Section>
      )}
         {nowPlaying && nowPlaying.length > 0 && (
         <Section title= "Now Playing">
-            {nowPlaying.map(movie => <span key={movie.id}> {movie.title}</span>)}
+            {nowPlaying.map(movie => (
+                <Poster
+                key={movie.id} 
+                id={movie.id} 
+                title={movie.original_title} 
+                imageUrl={movie.poster_path} 
+                isMovie={true} 
+                rating={movie.vote_average} 
+                year={movie.release_date && movie.release_date.substring(0,4)}
+                />
+))}
             </Section>
             )}
              {popular && popular.length > 0 && (
         <Section title= "Popular Movie">
-            {popular.map(movie => <span key={movie.id}> {movie.title}</span>)}
+            {popular.map(movie => (
+                <Poster
+                key={movie.id} 
+                id={movie.id} 
+                title={movie.original_title} 
+                imageUrl={movie.poster_path} 
+                isMovie={true} 
+                rating={movie.vote_average} 
+                year={movie.release_date && movie.release_date.substring(0,4)}
+                />
+))}
             </Section>
             )}
             
