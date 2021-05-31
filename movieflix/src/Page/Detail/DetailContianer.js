@@ -15,7 +15,7 @@ export default class extends React.Component{
             result:null,
             error:null,
             loading:true,
-        isMovie:pathname.includes("/movie/")
+        isMovie:pathname.includes("/movie/"),
 
         };
     
@@ -42,9 +42,9 @@ export default class extends React.Component{
             if(isMovie){
            ({data:result}= await Moviesapi.movieDetail(parseId));
 
-            }else{
-            ({data:result}= await tvApi.showDetail(parseId));
             }
+            ({data:result}= await tvApi.showDetail(parseId));
+            
             console.log(result);
         } catch{
             this.setState({
