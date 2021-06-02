@@ -68,5 +68,6 @@ const SearchPrsenter = ({movieResults,tvResults,searchTerm,error,loading, handle
     //movie나 tv shiw 은 value를 연결하려고 한다.
     //value(값)을 얻기 위해 javascript 로부터 얻기위해 state에 searchterm 이 있는 것이다.
     //그 후에 searachTerm을 container 에 있는 presenter 에 전달하는 것이다.
+    //
 
 
