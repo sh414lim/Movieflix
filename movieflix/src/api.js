@@ -22,11 +22,14 @@ export const Moviesapi={
             append_to_response:'videos'
         }
     }),
-    search:(term)=>api.get("search/movie",{
-        params:{
-            query:encodeURIComponent(term)
-        }
-    })
+
+    searchMovie:(term)=>api.get("search/movie",{
+            params:{
+        query :encodeURIComponent(term)  //어떤 파라미터 값을 이 함수에 넘기든지, 값을 인코딩하고 그 문자열로 검색한다.
+
+            }
+        })
+   
 }
 
 export  const tvApi={
@@ -38,9 +41,11 @@ export  const tvApi={
             append_to_response:'videos'
         }
     }),
-    search:(term)=>api.get("search/tv",{
+    
+    searchTv:(term)=>api.get("search/tv",{
         params:{
-            query:encodeURIComponent(term)
+        query :encodeURIComponent(term)  //어떤 파라미터 값을 이 함수에 넘기든지, 값을 인코딩하고 그 문자열로 검색한다.
+
         }
     })
 
