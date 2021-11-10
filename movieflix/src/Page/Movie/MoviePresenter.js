@@ -5,7 +5,7 @@ import Section from "../../Components/Section";
 import Loder from "../../Components/Loder";
 import Poster from "../../Components/Poster";
 
-//ui
+//ui style
   const Container=styled.div`
   padding:10px 10px;
   `;
