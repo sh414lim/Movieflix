@@ -17,7 +17,7 @@ export default class extends React.Component{
     handleSubmit=event=>{
         event.preventDefault();
         const {searchTerm} =this.state;
-        if(searchTerm !== ""){
+        if(searchTerm !== ""){  
             this.searchByTerm();
         }
     };
